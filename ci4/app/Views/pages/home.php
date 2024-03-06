@@ -21,7 +21,7 @@
                 <div class="icon-container">
                     <img src="<?php echo base_url('images/planet.png'); ?>" alt="Audio Image" class="audio-icon">
                 </div>
-                <audio src="<?php echo base_url('mp3/magic.mp3'); ?>"></audio>
+                <audio src="<?php echo base_url('audio/magic.mp3'); ?>"></audio>
                 <div class="controls">
                     <button class="player-button">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
