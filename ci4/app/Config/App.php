@@ -16,7 +16,7 @@ class App extends BaseConfig
      *
      *    http://example.com/
      */
-    public string $baseURL = 'http://localhost/';
+    public string $baseURL = 'http://localhost/WEBPROGSS221/lab3/ci4/public/';
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.
