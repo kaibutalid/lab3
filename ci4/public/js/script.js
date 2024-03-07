@@ -47,17 +47,18 @@ function msg() {
 
 // soundboard
 function play_sound(clicked_id) {
-  var audio = new Audio(clicked_id + "twinkle.mp3");
+  var audio = new Audio(clicked_id + "<?php echo base_url('audio/twinkle.mp3'); ?>");
   audio.play();
 }
 
+
 // change img
 function change(clicked_id) {
-  document.getElementById("shop").src = clicked_id; // Onclick event
+  document.getElementById("shop").src = clicked_id;
 }
 
-var originalImage = "3.png";
-var alternateImage = "sparkle.png";
+var originalImage = "<?= base_url('images/3.png'); ?>";
+var alternateImage = "<?= base_url('images/sparkle.png'); ?>";
 var isOriginal = true;
 
 function toggle() {

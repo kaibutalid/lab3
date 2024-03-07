@@ -7,14 +7,22 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 
+use App\Controllers\Comments;
 use App\Controllers\News;
-use App\Controllers\Guest;
 use App\Controllers\Pages;
+use App\Controllers\Kai;
 
-$routes->get('news', [News::class, 'index']);           // Add this line
-$routes->get('news/new', [News::class, 'new']); // Add this line
-$routes->post('news', [News::class, 'create']); // Add this line
-$routes->get('news/(:segment)', [News::class, 'show']); // Add this line
+$routes->get('kai', [Kai::class, 'main']); // About me page
+
+$routes->get('comments', [Comments::class, 'index']);
+$routes->get('comments/new', [Comments::class, 'new']); 
+$routes->post('comments', [Comments::class, 'create']);          
+$routes->get('comments/(:segment)', [Comments::class, 'show']);
+
+$routes->get('news', [News::class, 'index']);
+$routes->get('news/new', [News::class, 'new']);
+$routes->post('news', [News::class, 'create']);
+$routes->get('news/(:segment)', [News::class, 'show']);
 
 $routes->get('pages', [Pages::class, 'index']);
 $routes->get('(:segment)', [Pages::class, 'view']);

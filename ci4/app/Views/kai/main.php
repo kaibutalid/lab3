@@ -70,19 +70,27 @@
                 <button onclick="sound(twinkle)">
                     <img  id="shop" src="<?php echo base_url('images/3.png'); ?>" class="circle-image">
                 </button>
-                <button onClick="audio('twinkle.mp3')">
+                <button onclick="sound(twinkle)">
                     <img  id="music" src="<?php echo base_url('images/4.png'); ?>" class="circle-image">
                 </button>
-                <button onClick="play_sound(this.id)">
+                <button onclick="sound(twinkle)"">
                     <img  id="book" src="<?php echo base_url('images/5.png'); ?>" class="circle-image">
                 </button>
-                <button onClick="play_sound(this.id)">
+                <button onclick="sound(twinkle)">
                     <img  id="makeup" src="<?php echo base_url('images/6.png'); ?>" class="circle-image">
                 </button>
-                <button onClick="play_sound(this.id)">
+                <button onclick="sound(twinkle)">
                     <img  id="starfish" src="<?php echo base_url('images/7.png'); ?>" class="circle-image">
                 </button>
             </div>
         </div>
     </section>
 
+    <div id="section4" style="text-align:center; background-color: #d8a1c2; padding:10px; padding-bottom: 25px;">
+        <div style="color:white;">
+            <h2>Comments</h2>
+            <button style="display: inline-block;padding: 10px 20px;background-color: #ffffff;color: #926a93;box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.1);border-radius: 5px;text-decoration: none;font-size: 16px;cursor: pointer;" onmouseover="this.style.backgroundColor='#d8a1c2';" onmouseout="this.style.backgroundColor='#ffffff';">
+                <a style="text-decoration:none;" onmousedown="this.style.color='#ffffff';" href="<?= base_url('comments') ?>" >View comments</a>
+            </button>
+        </div> 
+</div>

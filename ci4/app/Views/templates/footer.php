@@ -11,5 +11,15 @@
             </div>
         </div>
     </footer>
+    <script> 
+  // Soundboard stuff
+    function sound(soundName) {
+        const soundPaths = {
+            'twinkle': 'audio/twinkle.mp3',
+        };
+        const audio = new Audio(soundPaths[soundName]);
+        audio.play();   
+        } 
+</script>
 </body>
 </html>
